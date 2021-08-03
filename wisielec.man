@@ -1,0 +1,59 @@
+.\" Manual do gry "Wisielec"
+.TH WISIELEC 1 "MAJ 2021" 1.0 "Wisielec Manual"
+.SH NAME
+.B Wisielec
+- gra polegająca na odgadnięciu wylosowanego hasła, które jest ukryte pod znakami podkreślenia (_).
+.SH SYNOPSIS
+.B wisielec
+[-h] [-v] [ -f
+.I źródło
+]
+.SH DESCRIPTION
+.B Wisielec
+to gra polegająca na odgadywaniu słów wylosowanych z bazy, których poszczególne litery ukryte są pod znakami podkreślenia. Za każde odgadnięte słowo zdobywa się punkty równe ilości pozostałych żyć na koniec rundy. Skrypt przechowuje wyniki 5 najlepszych graczy rozróżnianych poprzez login.
+.PP
+Z poziomu menu głównego użytkownik może wybrać jedną z następujących opcji:
+.IP \[bu] 2
+.B Nowa gra - 
+wyświetla zapytanie o login, a następnie uruchamia nową grę
+.IP \[bu] 
+.B Ranking -
+wyświetla ranking TOP 5 najlepszych graczy
+.IP \[bu] 
+.B Wyjście -
+powoduje zamknięcie skryptu
+.PP
+Interakcja z użytkownikiem odbywa się za pomocą okien programu
+.B 
+yad.
+.SH OPTIONS
+.TP 
+.B -h
+ wyświetla pomoc
+.TP
+.B -v
+ wyświetla informacje o autorze oraz wersji skryptu
+.TP
+.BI -f " źródło"
+ umożliwia wczytanie bazy słów z zewnętrznego pliku. Ścieżkę dostępu do tego pliku należy podać jako
+.I źródło
+.SH FILES
+.TP
+.B wisielec.sh 
+Plik ze skryptem zawierający wszystkie funkcje niezbędne do prawidłowego działania gry
+.TP
+.B BAZA.txt
+Baza zawierająca słowa wraz z kategoriami
+.TP
+.B RANKING.txt
+Plik przechowujący loginy oraz ilości punktów 5 najlepszych graczy
+.SH AUTHOR
+Bartosz Leśniewski, 184783
+.SH BUGS
+Brak błędów w działaniu skryptu
+.SH REPORTING BUGS
+W przypadku znalezienia błędu w działaniu skryptu, wyślij zgłoszenie na e-mail: 
+.MT 
+s184783@student.pg.edu.pl
+.SH "SEE ALSO"
+yad(1)

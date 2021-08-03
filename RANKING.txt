@@ -1,0 +1,5 @@
+bartek 52
+qwerty 10
+user123 9
+student 5
+gracz 3
